@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+	<meta http-equiv="Content-Security-Policy" 
+         content="default-src *; 
+                  style-src * 'self' 'unsafe-inline' 'unsafe-eval'; 
+                  script-src * 'self' 'unsafe-inline' 'unsafe-eval';">
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+  
+  <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />
+
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-inline' https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *" /> -->
+<link rel="icon" type="image/png" href="includes/logo.jpg">
+<script src="js/sweetalert.min.js"></script>
+		<link rel="stylesheet" href="css/sweetalert.css">
+<link href="css/jquery.mobile-1.0.min.css" rel="stylesheet" type="text/css"/>
+<link rel="stylesheet" type="text/css" href="img/stylesheet1.css">
+<script src="js/jquery-1.6.4.min.js" type="text/javascript"></script>
+<script src="js/jquery.mobile-1.0.min.js" type="text/javascript"></script>
+<script src="js/config.js?id=10" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="css/inde.css" />
+	
+    <title>Zamxa Hotels</title>
+	  <link rel="stylesheet" href="css/swiper.min.css?id=1">
+
+  <!-- Demo styles -->
+  <style>
+    html, body {
+      position: relative;
+      height: 100%;
+    }
+    body {
+      background: #eee;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color:#000;
+      margin: 0;
+      padding: 0;
+    }
+    .swiper-container {
+      width: 100%;
+      height: 100%;
+    }
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 999; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.7); /* Black w/ opacity */
+}
+ .image-example {
+        text-align: center;
+		font-family: Optima, sans-serif;
+    }
+	.image-example h1{
+		font-family: Comic Sans MS, Comic Sans, cursive;
+		color:#ffffff;
+    }
+  </style>
+  <style>
+.footer-img{
+	margin:0px;
+	bottom:0;
+	right:0;
+	position:absolute;
+	z-index:9;
+	width:70%
+}
+</style>
+</head>
+ 
+<body>
+   
+   <div data-role="content" class="login bod" id="carl2" style="display:none; width:100%; height:100%"><img style="width:100%; height:100%; position:absolute; left:0%; top:0%" class="head" src="img/logo2.png" hidden><img style="background:none;width:30%; height:30%; position:absolute; left:35%; top:35%" class="head" src="img/preloader.gif"></div>
+<div data-role="content" class="logi bod" id="carl" style="background:#FFFFFF; height:100%"><img style="width:100%; height:100%; position:absolute; left:0%; top:0%" class="head" src="img/logo.jpg"></div>
+<div id="page2" class="swiper-container" style="display:block">
+   <!-- Swiper -->
+    <div id="modal" class="modal image-example" align="center">
+	<img src="img/swipe.gif">
+	<h1>Swipe Left to Continue</h1></br>
+	<span onclick="$('.modal').hide();" style="cursor:pointer;font-size:120%;color:#ffffff;background:blue;border:1px solid blue;padding:10px;">OK, GOT IT</span>
+	</div> 
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="img/h1.jpg" style="width:100%; height:100%; position:absolute; left:0%; top:0%"></div>
+      <div class="swiper-slide"><img src="img/h2.jpg" style="width:100%; height:100%; position:absolute; left:0%; top:0%"></div>
+      <div class="swiper-slide"><img src="img/h3.jpg" style="width:100%; height:100%; position:absolute; left:0%; top:0%"></div>
+      <div class="swiper-slide"><img src="img/h4.jpg" style="width:100%; height:100%; position:absolute; left:0%; top:0%"></div>
+      <div class="swiper-slide"><img src="img/home.jpg" style="width:100%; height:100%; position:absolute; left:0%; top:0%">
+	  <img class="footer-img" onclick="$('#info').show();$('#page2').hide();" src="img/b_n.gif">
+	  </div>
+    </div>
+    <!-- Add Scrollbar -->
+  <div class="swiper-pagination"></div>
+    <!-- Add Arrows -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+
+
+
+<!--<img onclick="$('#page').hide();$('#info').show();" src="img/home.jpg" style="width:100%; height:100%; position:absolute; left:0%; top:0%">-->
+</div>
+<div data-role="page" id="info" class="info" style="display:none">
+
+	<div id="llink" style="overflow:auto; padding:0px 0px 0px 0px;" data-role="content">
+	<!--<iframe frameBorder="0" id="dd" src="http://zamxahotels.com/app/index.php"  width="100%" style="height:100%; overflow:auto;" />-->
+     </div>
+    
+    </div>
+	<script>
+        $("#llink")
+            .html('<object id="ddd" data="https://www.zamxahotels.com/app/index.php" width="100%" style="height:100%; overflow:auto;"/>');
+</script>
+    
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript">
+	$(document).ready(function(){
+    $('#ddd').height($(window).height());
+});
+        app.initialize();
+    </script>
+	<script src="js/swiper.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      pagination: {
+        el: '.swiper-pagination',
+        type: 'progressbar',
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  </script>
+</body>
+
+</html>
